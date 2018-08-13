@@ -61,8 +61,10 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="UnitTest1.cs" />
+    <Compile Include="AssertThat.cs" />
+    <Compile Include="StringCalculatorTests.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="StringCalculatorTests2.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />
