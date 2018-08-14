@@ -11,5 +11,10 @@
             
             return int.Parse(inputNumbers);
         }
+
+        public string ToNumbersString(int x, int y)
+        {
+            return string.Format("{0},{1}", x, y);
+        }
     }
 }

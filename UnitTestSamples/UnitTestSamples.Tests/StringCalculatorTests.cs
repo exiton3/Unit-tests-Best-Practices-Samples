@@ -85,5 +85,26 @@ namespace UnitTestSamples.Tests
 
             Assert.AreEqual(expected, actual);
         }
+
+        
+        [TestMethod]
+        public void ToNumbersString_TwoSimpleNumbers_StringNumbersWithCommaBetweenb()
+        {
+            var stringCalculator = new StringCalculator();
+
+            var result = stringCalculator.ToNumbersString(1, 2);
+
+            Assert.AreEqual(string.Format("{0},{1}", 1, 2), result);
+        }
+
+        [TestMethod]
+        public void ToNumbersString_TwoSimpleNumbers_StringNumbersWithCommaBetween()
+        {
+            var stringCalculator = new StringCalculator();
+
+            var result = stringCalculator.ToNumbersString(1, 2);
+
+            Assert.AreEqual("1,2", result);
+        }
     }
 }
