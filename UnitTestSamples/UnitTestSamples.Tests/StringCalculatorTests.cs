@@ -50,5 +50,40 @@ namespace UnitTestSamples.Tests
 
             AssertThat.Throws<OverflowException>(Actual);
         }
+        
+        //Bad
+        [TestMethod]
+        public void Add_MultipleNumbers_ReturnsCorrectResults()
+        {
+            var stringCalculator = new StringCalculator();
+            var expected = 0;
+            var testCases = new[]
+            {
+                "0,0,0",
+                "0,1,2",
+                "1,2,3"
+            };
+
+            foreach (var test in testCases)
+            {
+                Assert.AreEqual(expected, stringCalculator.Add(test));
+                expected += 3;
+            }
+
+        }
+        
+        
+        [DataRow("0,0,0", 0)]
+        [DataRow("0,1,2", 3)]
+        [DataRow("1,2,3", 6)]
+        [DataTestMethod]
+        public void Add_MultipleNumbers_ReturnsSumOfNumbers(string input, int expected)
+        {
+            var stringCalculator = new StringCalculator();
+
+            var actual = stringCalculator.Add(input);
+
+            Assert.AreEqual(expected, actual);
+        }
     }
 }
