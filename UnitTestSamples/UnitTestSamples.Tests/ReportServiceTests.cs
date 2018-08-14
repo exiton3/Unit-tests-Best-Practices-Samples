@@ -59,6 +59,7 @@ namespace UnitTestSamples.Tests
             Assert.AreEqual(expectedReport, actualReport);
         }
 
+        //Bad
         [TestMethod]
         public void Generate_BuildAndReturnReport()
         {

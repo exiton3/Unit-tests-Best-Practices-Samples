@@ -63,6 +63,7 @@
   <ItemGroup>
     <Compile Include="AssertThat.cs" />
     <Compile Include="PersonFormatterTests.cs" />
+    <Compile Include="PersonMapperTests.cs" />
     <Compile Include="ReportServiceTests.cs" />
     <Compile Include="StringCalculatorTests.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
