@@ -6,6 +6,11 @@ namespace UnitTestSamples.Tests
     [TestClass]
     public class StringCalculatorTests
     {
+        [TestInitialize]
+        public void TestInit()
+        {
+            
+        }
         //Better
         [TestMethod]
         public void Add_EmptyString_ReturnsZero()
